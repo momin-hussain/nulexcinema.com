@@ -926,15 +926,11 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr); /* Three columns */
-  background-color: #151515;
-  border-radius: 8px;
 }
 
 .gallery-item {
   overflow: hidden;
   position: relative;
-  border-radius: 8px;
-  background-color: #151515;
 }
 
 .gallery-item img {
@@ -949,8 +945,6 @@
 }
 
 .gallery-color {
-  background-color: #151515;
-  border-radius: 8px;
   padding: 20px;
   margin-top: 20px;
 }
