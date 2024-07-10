@@ -367,7 +367,7 @@
 }
 
 .movie-info p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 20px;
   background: transparent;
   align-items: center;
@@ -381,6 +381,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 15px;
 }
 
 .movie-info button:hover {
@@ -397,7 +398,7 @@
   text-decoration: none;
   align-items: center;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   transition: background-color 0.3s;
   transition: color 0.3s;
   margin-top: -10px;
@@ -460,14 +461,14 @@
 }
 
 .cares-item h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   margin-bottom: 10px;
   background-color: #151515;
 }
 
 .cares-item p {
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   background-color: #151515;
 }
@@ -535,7 +536,7 @@
 }
 
 .ticket-header span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #151515;
   
@@ -564,13 +565,12 @@
 .ticket-column {
   flex: 1;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #151515;
   border-radius: 8px;
 }
 
 .terms {
-  font-size: 32px;
   text-align: left;
   padding: 1px;
   background-color: #151515;
@@ -580,7 +580,7 @@
 
 
 .terms h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
   background-color: #151515;
   border-radius: 8px;
@@ -591,7 +591,7 @@
   background-color: #151515;
   border-radius: 8px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 
@@ -636,8 +636,8 @@
 }
 
 .private-screening p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 5px;
   color: white;
   text-align: center;
   background-color: #151515;
@@ -712,6 +712,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.4s ease;
+  font-size: 15px;
 }
 
 .private-button button:hover {
@@ -719,15 +720,21 @@
   color: white;
 }
 
+@media (max-width: 1200px) {
+  .private-grid {
+    grid-template-columns: repeat(1, 1fr); /* Three columns */
+  }
+}
+
 @media (max-width: 768px) {
   .private-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(1, 1fr); /* Three columns */
   }
 }
 
 @media (max-width: 480px) {
   .private-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(1, 1fr); /* Three columns */
   }
 }
 
@@ -784,7 +791,7 @@
 
 .show-times h4 {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   padding-top: 30px;
   background-color: #151515;
@@ -803,7 +810,7 @@
 
 .movie-credits h3 {
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   padding-top: 30px;
   background-color: #151515;
@@ -815,6 +822,7 @@
   border-radius: 8px;
   margin-left: 10px;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 
 .movie-credits h4 {
@@ -822,7 +830,7 @@
   font-size: 18px;
   background-color: #151515;
   border-radius: 8px;
-  
+  font-size: 15px;
 }
 
 .movie-credits h4 a{
@@ -830,6 +838,7 @@
   transform: 0.3s;
   background-color: #151515;
   border-radius: 8px;
+  font-size: 15px;
 }
 
 
@@ -843,10 +852,12 @@
 .dropdown {
   flex: 1 1 30%;
   min-width: 150px;
+  font-size: 15px;
 }
 
 .container.movie-detail {
   margin-bottom: -16px;
+  font-size: 15px;
 }
 
 .moviedetail-dropdown {
@@ -901,7 +912,7 @@
 }
 
 .gallery-text h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   padding-left: 12px;
   margin-bottom: 15px;
@@ -912,6 +923,7 @@
   background-color: #151515;
   border-radius: 8px;
   padding: 10px;
+  font-size: 15px;
 }
 
 .gallery-text p {
@@ -919,6 +931,7 @@
   background-color: #151515;
   border-radius: 8px;
   padding: 10px;
+  font-size: 15px;
 }
 
 .gallery-grid {
@@ -1060,7 +1073,8 @@
   width: 100%;
   padding: 10px;
   border-radius: 4px;
-  color: white
+  color: white;
+  font-size: 15px;
 }
 
 button[type="submit"] {
@@ -1071,7 +1085,7 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 button[type="submit"]:hover {
@@ -1134,6 +1148,7 @@ button[type="submit"]:hover {
 
 
 /* Booking Form Section */
+
 .booking-form {
   text-align: center;
 }
@@ -1156,7 +1171,6 @@ button[type="submit"]:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  
 }
 
 .form-group {
@@ -1246,7 +1260,7 @@ footer {
 }
 
 .footer-section h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
   background-color: #151515;
   border-radius: 8px;
@@ -1254,7 +1268,7 @@ footer {
 
 .footer-section p,
 .footer-section ul {
-  font-size: 16px;
+  font-size: 15px;
   color: whitesmoke;
   line-height: 1.6;
   background-color: #151515;
@@ -1303,7 +1317,7 @@ footer {
 
 .footer-bottom p {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #151515;
   border-radius: 8px;
 }
