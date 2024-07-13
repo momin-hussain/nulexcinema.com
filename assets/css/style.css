@@ -1165,7 +1165,6 @@ button[type="submit"]:hover {
   color: whitesmoke;
 }
 
-
 /* Booking Form Section */
 
 .booking-form {
@@ -1227,6 +1226,53 @@ button[type="submit"]:hover {
 .form-group button:hover {
   background-color: #81110d;
 }
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #222222;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #222222;
+  color: white;
+}
+
+.popup-content button {
+  padding: 8px 30px;
+  background-color: #faebd7;
+  color: black;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+  background-color: #81110d;
+  color: white;
+}
+
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {

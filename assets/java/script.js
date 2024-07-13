@@ -121,4 +121,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// JAVA SCRIPT SUBMIT
 
+    document.getElementById('submitbutton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Show the popup
+        const popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.innerHTML = '<div class="popup-content"><p>The details will be sent to your email!</p><button id="closePopup">OK</button></div>';
+        
+        document.body.appendChild(popup);
+
+        // Close the popup
+        document.getElementById('closePopup').addEventListener('click', function() {
+            document.body.removeChild(popup);
+        });
+    });
