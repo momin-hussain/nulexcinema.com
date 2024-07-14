@@ -1135,6 +1135,7 @@ button[type="submit"]:hover {
 
 .book {
   background-color: black;
+  margin-bottom: -20px;
 }
 
 .booking-main {
@@ -1271,7 +1272,6 @@ button[type="submit"]:hover {
   background-color: #81110d;
   color: white;
 }
-
 
 
 /* Responsive Styling */

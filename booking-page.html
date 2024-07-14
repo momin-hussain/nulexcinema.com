@@ -35,64 +35,73 @@
 
 <!-- BOOKING NOW STARTS -->
 <div class="book">
-<div class="booking-main">
-<div class="header-content">
-    <h2>Book Your Tickets Now!</h2>
-    <div class="booking-text">
-    <p>Enjoy the best cinematic experience with Nulex Cinema.</p>
-</div>
-</div>
-</div>
+    <div class="booking-main">
+        <div class="header-content">
+            <h2>Book Your Tickets Now!</h2>
+            <div class="booking-text">
+                <p>Enjoy the best cinematic experience with Nulex Cinema.</p>
+            </div>
+        </div>
+    </div>
 
-<!-- Booking Form Section -->
-<section class="booking-form">
-<form>
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter Name" required>
-    </div>
-    <div class="form-group">
-        <label for="contact">Contact No</label>
-        <input type="tel" id="contact" name="contact" placeholder="Enter Contact No" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter Email" required>
-    </div>
-    <div class="form-group">
-        <label for="address">Residence</label>
-        <input type="text" id="address" name="address" placeholder="Enter Address" required>
-    </div>
-    <div class="form-group">
-        <label for="tickets">No of Tickets (1 to 20)</label>
-        <input style="background-color: #292929;" type="number" id="tickets" name="tickets" placeholder="Enter No of Tickets" min="1" max="20" required>
-    </div>
-    <div class="form-group">
-        <label for="movie">Movie</label>
-        <select id="movie" name="movie" required>
-            <option value="" disabled selected>Select Movie</option>
-            <option>Unsung Hero</option>
-            <option>Inside Out 2</option>
-            <option>Ride Or Die</option>
-            <option>The Watchers</option>
-            <option>Kung Fu Panda 4</option>
-            <option>Siccin 7</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="date">Date</label>
-        <input style="text-transform: uppercase;" type="date" id="date" name="date" required>
-    </div>
-    <div class="form-group">
-        <label for="time">Time</label>
-        <input type="time" id="time" name="time" required>
-    </div>
-    <div class="form-group">
-        <button type="submit" id="submitbutton">Submit</button>
-    </div>
-</form>
-</section>
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact No</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter Contact No" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Residence</label>
+                <input type="text" id="address" name="address" placeholder="Enter Address" required>
+            </div>
+            <div class="form-group">
+                <label for="tickets">No of Tickets (1 to 20)</label>
+                <input style="background-color: #292929;" type="number" id="tickets" name="tickets" placeholder="Enter No of Tickets" min="1" max="20" required>
+            </div>
+            <div class="form-group">
+                <label for="movie">Movie</label>
+                <select id="movie" name="movie" required>
+                    <option value="" disabled selected>Select Movie</option>
+                    <option>Unsung Hero</option>
+                    <option>Inside Out 2</option>
+                    <option>Ride Or Die</option>
+                    <option>The Watchers</option>
+                    <option>Kung Fu Panda 4</option>
+                    <option>Siccin 7</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input style="text-transform: uppercase;" type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submitbutton">Submit</button>
+            </div>
+        </form>
+    </section>
+</div>
 <!-- BOOKING NOW ENDS -->
+
+<!-- Popup HTML -->
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <p id="popup-message"></p>
+        <button id="closePopup">OK</button>
+    </div>
+</div>
 
 <!-- FOOTER STARTS -->
 <footer>

@@ -123,18 +123,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // JAVA SCRIPT SUBMIT
 
-    document.getElementById('submitbutton').addEventListener('click', function(event) {
+    document.getElementById('booking-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
 
+        const name = document.getElementById('name').value.trim();
+        const contact = document.getElementById('contact').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const tickets = document.getElementById('tickets').value.trim();
+        const movie = document.getElementById('movie').value.trim();
+        const date = document.getElementById('date').value.trim();
+        const time = document.getElementById('time').value.trim();
+
+        let popupMessage = '';
+
+        if (name && contact && email && address && tickets && movie && date && time) {
+            popupMessage = 'The details will be sent to your email';
+        } else {
+            popupMessage = 'Please fill out the form';
+        }
+
         // Show the popup
-        const popup = document.createElement('div');
-        popup.className = 'popup';
-        popup.innerHTML = '<div class="popup-content"><p>The details will be sent to your email!</p><button id="closePopup">OK</button></div>';
-        
-        document.body.appendChild(popup);
+        const popup = document.getElementById('popup');
+        const popupMessageElement = document.getElementById('popup-message');
+        popupMessageElement.textContent = popupMessage;
+        popup.style.display = 'flex';
 
         // Close the popup
         document.getElementById('closePopup').addEventListener('click', function() {
-            document.body.removeChild(popup);
+            popup.style.display = 'none';
         });
     });
